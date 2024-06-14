@@ -1,0 +1,171 @@
+/* margin pour tte la paaaaaaaaaaaaaaaaage */
+
+.nav-bar {
+
+display:flex; 
+flex-direction: row;
+justify-content: flex-end;
+gap:20px;
+list-style-type: none;
+font-family: roboto;
+font-weight: bold;
+font-size: larger;
+position: relative;
+top: -15px;
+margin: 15px;
+/*centrer les liens nav bar c'est correct ?????????*/
+}
+
+/*changer la couleurs de l'entete */
+
+.item{
+color: white;
+}
+
+header{
+   background-color: #8F2D56;
+}
+
+.Accueil-introduction {
+
+background-color:  #8F2D56;
+padding: 30px ;
+display: flex;
+justify-content: space-around;
+margin: 15px;
+}
+
+a.button{
+
+    display : inline-block;
+    margin-left: 100px;  /*pour modifier sa position horizantale c correct ? */
+    background: linear-gradient(#8e86b5, #acaeed);
+    height: 45px;
+    width: 300px;
+    border: 2px;
+    border-radius: 30px;
+    text-align:center;
+      
+}
+
+
+.Accueil-introduction p  {
+    width: 600px;
+   font-weight: bold;
+   font-size: 1.5em;
+   color: white;
+}
+
+h1{
+
+color: white;
+
+}
+
+
+
+
+#about-me,#Work,#resume,#Contact {
+    background-color:  #8F2D56;
+    padding: 15px;
+margin:15px;
+text-align: center;
+color:white;
+}
+
+
+form{
+
+    background-color:  #8F2D56 ;
+    display: flex;
+     flex-direction: column;
+     margin-inline: auto;
+     
+}
+
+.name-email{
+
+    display: flex ;
+    justify-content: space-around;
+    width: 70%;
+    height: 50%;
+}
+
+input{
+
+    width: 500px;
+    padding: 5px;
+    border-radius: 1px;
+    margin: 15px;
+}
+
+textarea{
+
+    width: 70%;
+    height: 300px;
+    padding: 5px;
+    border-radius: 1px;
+    margin: 15px;
+    display : inline-block;
+    margin-left: 50px;  /*pour modifier sa position horizantale c correct ? */
+
+}
+
+
+
+
+
+
+input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+    display : inline-block;
+    margin-left: 500px;  /*pour modifier sa position horizantale c correct ? */
+
+  }
+
+  table{
+
+    margin: auto;
+    width:80%;
+    height: 200px;
+    background-color:#8e86b5
+  }
+
+
+  .container {
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.Element1{
+
+    border: 2px solid black;
+    height: 60px;
+    width: 200px;
+    background-color: #8e86b5;
+     margin: auto;
+     text-align: center;
+     
+}
+
+.Liens{
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+a{
+
+    color :white;
+}

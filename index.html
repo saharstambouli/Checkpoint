@@ -4,34 +4,37 @@
     <meta charset="utf-8">
     <meta name="description page " content="this page contains all you need to know about me  ">
     <title>My portfolio </title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
 
-    <header> 
+  <header> 
     <!--  navigation menu internal link -->
+      <img href="./photos/il_1588xN.2508345069_kmqi.avif" alt="mon logo">
     <nav > 
-     <ul>
-      <li> <a href="index.html" >Home </a></li>
-      <li> <a href="#about-me" >About</a> </li>
-      <li> <a href="#work" > Work </a></li>
-      <li> <a href="#resume" > Resume </a></li>
-      <li> <a href="#Contact"> Contact </a> </li>
+     <ul  class="nav-bar">
+      <li > <a href="index.html" > <span  class="item"> Home  </span> </a></li>
+      <li> <a href="#about-me" ><span  class="item"> About   </span> </a> </li>
+      <li> <a href="#Work" ><span  class="item">  Work </span> </a></li>
+      <li> <a href="#resume" > <span  class="item"> Resume </span></a></li>
+      <li> <a href="#Contact"><span  class="item">Contact</span> </a> </li>
     </ul>
     </nav>
-    </header>
+  </header>
 
-<Section  > 
-  <h1> Sahar Stambouli portfolio  </h1>
-  <p> Where professionalism combines with passion. For more than 5 years now, I have been practicing my profession with passion </p>
-  <img src="../chekpoint/77220f60-7608-4fd0-885d-7d04344d4939.jpg" alt="it my photo" width="300px" height="300px" /> 
-<div>
-  <audio controls>
-  <source src="test.mp3" type="audio/mpeg">
-        Please Check the audio Extension
-</audio>
+<Section class="Accueil-introduction  " > 
+
+    <img  src="./photos/77220f60-7608-4fd0-885d-7d04344d4939.jpg" alt="it my photo" width="300px" height="300px" /> 
+  <div >
+    <h1 > Sahar Stambouli portfolio  </h1>
+  <p  > Where professionalism combines with passion. For more than 5 years now, I have been practicing my profession with passion </p>
+  <a class="button" href="#form" > You need to create your Website ? Ecrivez-moi </a>
 </div>
+  
 </Section>
+
+<!--Section about me -->
 
 <section id='about-me'>
 
@@ -39,17 +42,16 @@
   <p> I'm sahar stambouli a web developer with long time experience in this field .<br>
 I'm a passionate person </p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u5W2NWItytc?si=qimk0V1hkMzJiW6T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
   </section>
 
-  <section id ='Work'>
+<!--work -->
+
+  <section id ="Work">
   <h1> Work </h1>
     <p> Developer since 5 years i can help you to create your dream website.<br>
        I manage everything frontend and backend  </p>
   
-  
-    <table border="1">
+      <table border="1">
        <tr>
        <th>  competences </th>
        <th>  experience  </th>
@@ -70,51 +72,64 @@ I'm a passionate person </p>
     <h1> Resume</h1>
     <p> This is a resume about me  </p>
     
+    <h2> Skills </h2>
+    <div class="container ">
+    <div class="Element1">   Javascript :Make your website more  dynamic  </div>
+    <div class="Element1">   React   </div>
+    <div class="Element1">   Html:represent the structure of your website   </div>
+    <div class="Element1">   Css: making your website more visually appealing </div>
+    <div class="Element1">   Node Js    </div>
+    <div class="Element1">   Express     </div>
+
+    </div>
+
     </section>
 
-    <section id ="Contact">
-      <h1> Contacts</h1>
-      <ul>
-      <li> <a href="https://www.instagram.com/"> Instagram </a></li>
-      <li> <a href="https://www.facebook.com/"> Facebook </a></li>
-      <li> <a href="https://x.com/?lang=fr"> Twitter </a>   </li>
-      </ul>
-      </section>
-
-</body>
+ </body>
 
 <footer>
-<form>
+
+<form id="form" >
   <fieldset>
   <legend>
-About you : please enter your informations 
+<h2>Please enter your informations  </h2>
 
   </legend>
-<p>
-  <label> First Name</label> 
-  <input type="text" placeholder="First Name ">
-</p>
+<div class="name-email">
 
-<p>
-  <label> Last name</label>
-  <input type="text" placeholder="Last name ">
-</p>
- 
-<p>
-  <label> birth date</label>
-  <input type="date" placeholder="birth date "> 
-</p>
+  <div class="name">
+    <label for="Nom">Nom</label>
+  <input type="text" placeholder=" Name ">
+     </div>
 
-<p>
-  <label> email</label>
+<div class="email">
+  <label for="Email">Email</label>
 <input type="email" placeholder="your email">
-</p>
+</div>
+
+</div>
+
+
+<div>
+<label > message </label>
+  <textarea name="message" id="message" placeholder="message"></textarea>
+</div>
 
 <p>
-  <button> button  </button>
+  <input type="submit" value="SUBMIT" class="cta" >
 </p>
 </fieldset>
 </form>
 
+<section id ="Contact">
+  <h1> Contacts</h1>
+  <ul class="Liens">
+  <li> <a href="https://www.instagram.com/"> Instagram </a></li>
+  <li> <a href="https://www.facebook.com/"> Facebook </a></li>
+  <li> <a href="https://x.com/?lang=fr"> Twitter </a>   </li>
+  </ul>
+  </section>
+
 </footer>
 </html>
+
